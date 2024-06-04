@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('medName', 64);
             $table->text('medDesc');
             $table->string('medDosage', 32);
-            $table->timestamps();
+            $table->timestamp(column: 'created_at')->useCurrent();
+            $table->timestamp(column: 'updated_at')->useCurrent();
         });
     }
 

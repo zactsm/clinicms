@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('staffDept', 16);
             $table->string('staffEmail')->unique();
             $table->string('staffPhoneNo', 15);
-            $table->timestamps();
+            $table->timestamp(column: 'created_at')->useCurrent();
+            $table->timestamp(column: 'updated_at')->useCurrent();
         });
     }
 

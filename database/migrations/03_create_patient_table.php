@@ -19,7 +19,8 @@ return new class extends Migration
             $table->enum('pGender', ['M', 'F']);
             $table->string('pPhoneNo', 15);
             $table->string('pAddress', 128);
-            $table->timestamps();
+            $table->timestamp(column: 'created_at')->useCurrent();
+            $table->timestamp(column: 'updated_at')->useCurrent();
         });
     }
 

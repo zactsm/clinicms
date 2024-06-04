@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('suppName', 64);
             $table->string('suppEmail')->unique();
             $table->string('suppPhoneNo', 15);
-            $table->timestamps();
+            $table->timestamp(column: 'created_at')->useCurrent();
+            $table->timestamp(column: 'updated_at')->useCurrent();
         });
     }
 

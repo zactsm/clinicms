@@ -16,7 +16,8 @@ return new class extends Migration
             $table->unsignedBigInteger('billID');
             $table->decimal('paymentAmount', 10, 2);
             $table->date('paymentDate');
-            $table->timestamps();
+            $table->timestamp(column: 'created_at')->useCurrent();
+            $table->timestamp(column: 'updated_at')->useCurrent();
 
             $table->foreign('billID')->references('billID')->on('bill')->onDelete('cascade');
         });

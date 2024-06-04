@@ -18,7 +18,8 @@ return new class extends Migration
             $table->unsignedBigInteger('medID');
             $table->text('recDiagnosis');
             $table->date('recDate');
-            $table->timestamps();
+            $table->timestamp(column: 'created_at')->useCurrent();
+            $table->timestamp(column: 'updated_at')->useCurrent();
 
             $table->foreign('patientID')->references('patientID')->on('patient')->onDelete('cascade');
             $table->foreign('staffID')->references('staffID')->on('staff')->onDelete('cascade');

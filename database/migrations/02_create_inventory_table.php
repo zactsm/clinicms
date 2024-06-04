@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('itemName', 64);
             $table->text('itemDesc');
             $table->integer('itemStock');
-            $table->timestamps();
+            $table->timestamp(column: 'created_at')->useCurrent();
+            $table->timestamp(column: 'updated_at')->useCurrent();
 
             $table->foreign('suppID')->references('suppID')->on('supplier')->onDelete('cascade');
         });

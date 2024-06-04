@@ -17,7 +17,8 @@ return new class extends Migration
             $table->unsignedBigInteger('staffID');
             $table->date('aptDate');
             $table->time('aptTime');
-            $table->timestamps();
+            $table->timestamp(column: 'created_at')->useCurrent();
+            $table->timestamp(column: 'updated_at')->useCurrent();
 
             $table->foreign('patientID')->references('patientID')->on('patient')->onDelete('cascade');
             $table->foreign('staffID')->references('staffID')->on('staff')->onDelete('cascade');
