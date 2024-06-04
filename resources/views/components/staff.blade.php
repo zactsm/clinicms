@@ -1,20 +1,20 @@
 <!-- resources/views/components/inventory.blade.php -->
 <div style="padding-bottom: 5rem;">
-    <div style="text-align: center;">
+    <div style="text-align: left; padding-bottom: 20px; padding-left: 2.5%;">
     <h2>Staff</h2>
     </div>
-    <table style="border-collapse: collapse; width: 100%;">
+    <table style="border-collapse: collapse; width:95%; margin: 0 auto;">
         <!-- Table headers -->
         <thead>
             <tr>
-                <th style="border: 1px solid #ddd; padding: 8px;">Staff ID</th>
+                <th style="border: 1px solid #ddd; padding: 8px; width: 5%;">Staff ID</th>
                 <th style="border: 1px solid #ddd; padding: 8px;">First Name</th>
                 <th style="border: 1px solid #ddd; padding: 8px;">Last Name</th>
                 <th style="border: 1px solid #ddd; padding: 8px;">Department</th>
                 <th style="border: 1px solid #ddd; padding: 8px;">Email</th>
                 <th style="border: 1px solid #ddd; padding: 8px;">Phone No</th>
-                <th style="border: 1px solid #ddd; padding: 8px;">Created At</th>
-                <th style="border: 1px solid #ddd; padding: 8px;">Updated At</th>
+                <th style="border: 1px solid #ddd; padding: 8px; width: 10%;">Created At</th>
+                <th style="border: 1px solid #ddd; padding: 8px; width: 10%;">Updated At</th>
                 <!-- Add more columns if needed -->
             </tr>
         </thead>
