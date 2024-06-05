@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300);
 
-@tailwind base;
+/*@tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 [x-cloak] {
     display: none;
