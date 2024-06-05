@@ -6,7 +6,7 @@
 ## Sequence Diagram
 ![Sequence Diagram of Clinic Management System](/assets/sequence.png)
 
-### For group members!!
+#### For group members!
 
 1. Open VS Code
 2. Click 'Source Control' at the left bar
