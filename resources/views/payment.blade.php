@@ -8,7 +8,7 @@
 
     <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="business" value="sb-38akl27210811@business.example.com">
+        <input type="hidden" name="business" value="myclinic@business.example.com">
 
         <!-- Input field for Bill ID -->
         <label for="bill_id">Bill ID:</label>
