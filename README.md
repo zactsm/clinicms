@@ -24,3 +24,7 @@ To create database and insert the data
 
 1. Run `php artisan migrate` or `php artisan migrate:fresh` to clear the data inside the database
 2. Run `php artisan db:seed`
+
+Run this last
+
+Run `npm run dev` to ensure Make Payment runs smoothly.
