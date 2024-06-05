@@ -10,6 +10,9 @@ use App\Models\Appointment;
 use App\Models\Bill;
 use App\Models\Payment;
 use App\Models\Record;
+use App\Http\Controllers\PaymentController;
+
+Route::get('/payment', [PaymentController::class, 'create'])->name('payment');
 
 Route::get('/', function () {
     return view('welcome');
