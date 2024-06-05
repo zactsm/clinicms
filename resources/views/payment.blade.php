@@ -18,15 +18,22 @@
             <div class="form-title">
             <h1>Make Payment</h1>
             </div>
-            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <form action="{{ route('store.payment') }}" method="post">
+                @csrf
                 <input type="hidden" name="cmd" value="_xclick">
                 <input type="hidden" name="business" value="myclinic@business.example.com">
 
                 <!-- Input field for Bill ID -->
-                <input type="text" id="bill_id" name="bill_id" placeholder="Bill ID" required>
+                <div class="form-group">
+                    <!--<label for="bill_id">Bill ID:</label>-->
+                    <input type="text" id="bill_id" name="bill_id" placeholder="Bill ID" required>
+                </div>
 
                 <!-- Input field for Payment Amount -->
-                <input type="text" id="payment_amount" name="amount" placeholder="Payment Amount" required>
+                <div class="form-group">
+                    <!--<label for="payment_amount">Payment Amount:</label>-->
+                    <input type="text" id="payment_amount" name="amount" placeholder="Payment Amount" required>
+                </div>
 
                 <!-- Hidden fields for PayPal settings -->
                 <input type="hidden" name="item_name" value="Payment for Bill">
@@ -36,6 +43,7 @@
 
                 <button type="submit">Pay with PayPal</button>
             </form>
+
         </div>
     </div>
 </body>

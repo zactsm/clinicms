@@ -13,6 +13,7 @@ use App\Models\Record;
 use App\Http\Controllers\PaymentController;
 
 Route::get('/payment', [PaymentController::class, 'create'])->name('payment');
+Route::post('/store-payment', [PaymentController::class, 'store'])->name('store.payment');
 
 Route::get('/', function () {
     return view('welcome');
