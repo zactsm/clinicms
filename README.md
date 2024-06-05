@@ -6,6 +6,13 @@
 ## Sequence Diagram
 ![Sequence Diagram of Clinic Management System](/assets/sequence.png)
 
+## Project system captured screen and explanation
+Pictures here
+
+## What is the challenge/difficulties to develop the application
+1. It is difficult to handle many files
+2. File or variable names sometimes mismatch
+
 #### For group members!
 
 1. Open VS Code
