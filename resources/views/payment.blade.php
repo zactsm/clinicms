@@ -32,7 +32,7 @@
                 <!-- Input field for Payment Amount -->
                 <div class="form-group">
                     <!--<label for="payment_amount">Payment Amount:</label>-->
-                    <input type="text" id="payment_amount" name="amount" placeholder="Payment Amount" required>
+                    <input type="text" id="payment_amount" name="amount" placeholder="Payment Amount (RM)" required>
                 </div>
 
                 <!-- Hidden fields for PayPal settings -->

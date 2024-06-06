@@ -9,7 +9,8 @@
 }
 
 body {
-    background: linear-gradient(90deg, #0070e0 0%, #0544b5 50%);
+    background: url('/public/assets/bg.png');
+    background-size: cover;
     font-family: "Poppins";
     display: flex;
     justify-content: center;
