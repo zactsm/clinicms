@@ -34,4 +34,4 @@ To create database and insert the data
 
 Run this last
 
-Run `npm run dev` to ensure Make Payment runs smoothly.
+Run `npm run dev` and do NOT exit CMD to ensure Make Payment runs smoothly.
