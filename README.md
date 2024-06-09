@@ -27,6 +27,12 @@ For first time pull:
 9. Run `copy .env.example .env`
 10. Run `php artisan key:generate`
 
+Configuring XAMPP:
+1. Make sure the DocumentRoot is as following:
+    _DocumentRoot "C:/xampp/htdocs/clinicms/public"_
+    _<Directory "C:/xampp/htdocs/clinicms/public">_
+2. Now the _localhost_ URL will bring you to the homepage
+
 To create database and insert the data:
 1. Run `php artisan migrate` or `php artisan migrate:fresh` to clear the data inside the database
 2. Run `php artisan db:seed`
