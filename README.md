@@ -39,7 +39,7 @@ Pictures here
    
 
 **Configuring XAMPP:**
-1. Make sure the DocumentRoot is as following:<br />
+1. Make sure the Apache DocumentRoot is as following:<br />
 ```
 DocumentRoot "C:/xampp/htdocs/clinicms/public"
 <Directory "C:/xampp/htdocs/clinicms/public">
