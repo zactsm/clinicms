@@ -1,15 +1,10 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
-use App\Models\Supplier;
-use App\Models\InventoryItem;
-use App\Models\Patient;
-use App\Models\Staff;
-use App\Models\Medication;
-use App\Models\Appointment;
-use App\Models\Bill;
-use App\Models\Payment;
-use App\Models\Record;
+
+
+use App\Http\Controllers\DefaultController;
 use App\Http\Controllers\PaymentController;
 
 Route::get('/payment', [PaymentController::class, 'create'])->name('payment');
@@ -24,34 +19,13 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
 
-        // Fetch all data
-        $suppliers = Supplier::all();
-        $inventoryItems = InventoryItem::all();
-        $patients = Patient::all();
-        $staffs = Staff::all();
-        $medications = Medication::all();
-        $appointments = Appointment::all();
-        $bills = Bill::all();
-        $payments = Payment::all();
-        $records = Record::all();
+    Route::get('/dashboard', [DefaultController::class, 'dashboard'])->name('dashboard');
+    // Don't spam on DefaultController, make the others in their specific controller;
+    // To go to specific controller, press Ctrl+Click on Targetcontroller [exp: click on line 23 'DefaultController']
+
+    //Patients routes
 
 
-        // Pass data
-        return view('dashboard', [
-            'suppliers' => $suppliers,
-            'inventoryItems' => $inventoryItems,
-            'patients' => $patients,
-            'staffs' => $staffs,
-            'medications' => $medications,
-            'appointments' => $appointments,
-            'bills' => $bills,
-            'payments' => $payments,
-            'records' => $records,
-        ]);
-    })->name('dashboard');
-
-        //return view('dashboard');
-    //})->name('dashboard');
+    //Staff routes
 });
