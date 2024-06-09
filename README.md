@@ -17,6 +17,7 @@ Pictures here
 > For group members!
 
 For first time pull:
+<details><summary><b>Show instructions</b></summary>
 1. Open VS Code
 2. Click 'Source Control' at the left bar
 3. Clone Repository
@@ -27,6 +28,7 @@ For first time pull:
 8. Run `composer install`
 9. Run `copy .env.example .env`
 10. Run `php artisan key:generate`
+</details>
 
 Configuring XAMPP:
 1. Make sure the DocumentRoot is as following:<br />
