@@ -59,7 +59,7 @@ or
 ```
 php artisan migrate:fresh
 ```
-   > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
+       > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
 5. Seed the database
 ```
 php artisan db:seed
