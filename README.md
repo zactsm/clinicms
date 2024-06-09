@@ -13,7 +13,7 @@ Pictures here
 1. It is difficult to handle many files
 2. File or variable names sometimes mismatch
 
-#### For group members!
+> [For group members!]
 
 For first time pull:
 1. Open VS Code
@@ -29,8 +29,8 @@ For first time pull:
 
 Configuring XAMPP:
 1. Make sure the DocumentRoot is as following:
-> _DocumentRoot "C:/xampp/htdocs/clinicms/public"_
-> _<Directory "C:/xampp/htdocs/clinicms/public">_
+    > _DocumentRoot "C:/xampp/htdocs/clinicms/public"_
+    > _<Directory "C:/xampp/htdocs/clinicms/public">_
 2. Now the _localhost_ URL will bring you to the homepage
 
 To create database and insert the data:
