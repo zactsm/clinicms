@@ -28,9 +28,9 @@ For first time pull:
 10. Run `php artisan key:generate`
 
 Configuring XAMPP:
-1. Make sure the DocumentRoot is as following:
+1. Make sure the DocumentRoot is as following:<br />
 _DocumentRoot "C:/xampp/htdocs/clinicms/public"_<br />
-_<Directory "C:/xampp/htdocs/clinicms/public">_
+_<Directory "C:/xampp/htdocs/clinicms/public">_<br />
 2. Now the _localhost_ URL will bring you to the homepage
 
 To create database and insert the data:
