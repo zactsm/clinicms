@@ -18,16 +18,16 @@ Pictures here
 
 For first time pull:
 <details><summary><b>Show instructions</b></summary>
-1. Open VS Code
-2. Click 'Source Control' at the left bar
-3. Clone Repository
-4. Then select your _C:\xampp\htdocs_ directory as target folder
-5. Open **clinicms** in File Explorer
-6. Click the address bar once, type `CMD` and click Enter
-7. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
-8. Run `composer install`
-9. Run `copy .env.example .env`
-10. Run `php artisan key:generate`
+    1. Open VS Code
+    2. Click 'Source Control' at the left bar
+    3. Clone Repository
+    4. Then select your _C:\xampp\htdocs_ directory as target folder
+    5. Open **clinicms** in File Explorer
+    6. Click the address bar once, type `CMD` and click Enter
+    7. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
+    8. Run `composer install`
+    9. Run `copy .env.example .env`
+    10. Run `php artisan key:generate`
 </details>
 
 Configuring XAMPP:
