@@ -38,7 +38,8 @@ To create database and insert the data:
 2. Click the address bar once, type `CMD` and click Enter
 3. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
 4. Run `php artisan migrate` or `php artisan migrate:fresh` to clear the data inside the database
-5. Run `php artisan db:seed`
+   > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
+6. Run `php artisan db:seed`
 
 Run this last (needs to run every single time):
 1. Run `npm run dev` and do NOT exit CMD to ensure Make Payment runs smoothly.
