@@ -35,8 +35,11 @@ Configuring XAMPP:
 2. Now the _localhost_ URL will bring you to the homepage
 
 To create database and insert the data:
-1. Run `php artisan migrate` or `php artisan migrate:fresh` to clear the data inside the database
-2. Run `php artisan db:seed`
+1. Open **clinicms** in File Explorer
+2. Click the address bar once, type `CMD` and click Enter
+3. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
+4. Run `php artisan migrate` or `php artisan migrate:fresh` to clear the data inside the database
+5. Run `php artisan db:seed`
 
 Run this last (needs to run every single time):
 1. Run `npm run dev` and do NOT exit CMD to ensure Make Payment runs smoothly.
