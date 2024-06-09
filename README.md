@@ -14,6 +14,7 @@ Pictures here
 2. File or variable names sometimes mismatch
 
 > [!WARNING]
+> For group members!
 
 For first time pull:
 1. Open VS Code
