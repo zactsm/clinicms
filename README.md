@@ -28,11 +28,11 @@ For first time pull:
    ```
    composer install
    ```
-10. Configure `.env` file
+9. Configure `.env` file
     ```
     copy .env.example .env
     ```
-12. Generate new unique key
+10. Generate new unique key
     ```
     php artisan key:generate
     ```
@@ -50,9 +50,19 @@ To create database and insert the data:
 1. Open **clinicms** in File Explorer
 2. Click the address bar once, type `CMD` and click Enter
 3. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
-4. Run `php artisan migrate` or `php artisan migrate:fresh` to clear the data inside the database
+4. Run migrate command or fresh migrate command to clear the data inside the database
+```
+php artisan migrate
+```
+or
+```
+php artisan migrate:fresh
+```
    > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
-6. Run `php artisan db:seed`
+5. Run `php artisan db:seed`
 
 Run this last (needs to run every single time):
-1. Run `npm run dev` and do NOT exit CMD to ensure Make Payment runs smoothly.
+1. Run npm to execute script files
+   ```
+   npm run dev
+   ```
