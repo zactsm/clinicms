@@ -28,11 +28,11 @@ Pictures here
    ```
    composer install
    ```
-9. Configure `.env` file
+10. Configure `.env` file
     ```
     copy .env.example .env
     ```
-10. Generate new unique key
+12. Generate new unique key
     ```
     php artisan key:generate
     ```
@@ -40,10 +40,10 @@ Pictures here
 
 **Configuring XAMPP:**
 1. Make sure the Apache DocumentRoot is as following:<br />
-```
-DocumentRoot "C:/xampp/htdocs/clinicms/public"
-<Directory "C:/xampp/htdocs/clinicms/public">
-```
+   ```
+   DocumentRoot "C:/xampp/htdocs/clinicms/public"
+   <Directory "C:/xampp/htdocs/clinicms/public">
+   ```
 2. Now the _localhost_ URL will bring you to the homepage
 
 
@@ -52,18 +52,18 @@ DocumentRoot "C:/xampp/htdocs/clinicms/public"
 2. Click the address bar once, type `CMD` and click Enter
 3. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
 4. Run migrate command or fresh migrate command to clear the data inside the database
-```
-php artisan migrate
-```
-or
-```
-php artisan migrate:fresh
-```
-       > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
-5. Seed the database
-```
-php artisan db:seed
-```
+   ```
+   php artisan migrate
+   ```
+   or
+   ```
+   php artisan migrate:fresh
+   ```
+    > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
+6. Seed the database
+   ```
+   php artisan db:seed
+   ```
 
 
 **Run this last (needs to run every single time):**
