@@ -38,7 +38,7 @@ Pictures here
     ```
    
 
-### **Configuring XAMPP:**
+### **Configure XAMPP:**
 1. Make sure the Apache DocumentRoot is as following:<br />
    ```
    DocumentRoot "C:/xampp/htdocs/clinicms/public"
