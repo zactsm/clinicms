@@ -24,9 +24,12 @@ For first time pull:
 5. Open **clinicms** in File Explorer
 6. Click the address bar once, type `CMD` and click Enter
 7. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
-8. Run `composer install`
-9. Run `copy .env.example .env`
-10. Run `php artisan key:generate`
+8. Run
+   ```
+   composer install
+   copy .env.example .env
+   php artisan key:generate
+   ```
 
 Configuring XAMPP:
 1. Make sure the DocumentRoot is as following:<br />
