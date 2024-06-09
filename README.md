@@ -16,7 +16,7 @@ Pictures here
 > [!IMPORTANT]
 > For group members!
 
-#### **For first time pull:**
+### **For first time pull:**
 1. Open VS Code
 2. Click 'Source Control' at the left bar
 3. Clone Repository
@@ -38,7 +38,7 @@ Pictures here
     ```
    
 
-#### **Configuring XAMPP:**
+### **Configuring XAMPP:**
 1. Make sure the Apache DocumentRoot is as following:<br />
    ```
    DocumentRoot "C:/xampp/htdocs/clinicms/public"
@@ -47,7 +47,7 @@ Pictures here
 2. Now the _localhost_ URL will bring you to the homepage
 
 
-#### **To create database and insert the data:**
+### **To create database and insert the data:**
 1. Open **clinicms** in File Explorer
 2. Click the address bar once, type `CMD` and click Enter
 3. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
@@ -66,7 +66,7 @@ Pictures here
    ```
 
 
-#### **Run this last (needs to run every single time):**
+### **Run this last (needs to run every single time):**
 1. Run npm to execute script files
    ```
    npm run dev
