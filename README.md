@@ -47,7 +47,7 @@ Pictures here
 2. Now the _localhost_ URL will bring you to the homepage
 
 
-### **To create database and insert the data:**
+### **Create database and insert the data:**
 1. Open **clinicms** in File Explorer
 2. Click the address bar once, type `CMD` and click Enter
 3. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
