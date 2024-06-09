@@ -13,7 +13,7 @@ Pictures here
 1. It is difficult to handle many files
 2. File or variable names sometimes mismatch
 
-> [For group members!]
+> [!For group members!]
 
 For first time pull:
 1. Open VS Code
