@@ -41,8 +41,10 @@ Pictures here
 ### **Configure XAMPP:**
 1. Make sure the Apache DocumentRoot is as following:<br />
    ```
+   ...
    DocumentRoot "C:/xampp/htdocs/clinicms/public"
    <Directory "C:/xampp/htdocs/clinicms/public">
+   ...
    ```
 2. Now the _localhost_ URL will bring you to the homepage
 
