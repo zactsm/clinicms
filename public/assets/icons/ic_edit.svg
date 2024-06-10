@@ -1,0 +1,35 @@
+<svg id='edit_24' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+    xmlns:xlink='http://www.w3.org/1999/xlink'>
+    <rect width='24' height='24' stroke='none' fill='#000000' opacity='0' />
+
+
+    <g transform="matrix(1 0 0 1 12 12)">
+        <g style="">
+            <g transform="matrix(1 0 0 1 0 0)">
+                <path
+                    style="stroke: none; stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"
+                    transform=" translate(-12, -12)" d="M 0 0 L 24 0 L 24 24 L 0 24 z"
+                    stroke-linecap="round" />
+            </g>
+            <g transform="matrix(1 0 0 1 -1.75 1.25)">
+                <path
+                    style="stroke: rgb(0,0,0); stroke-width: 1.5; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"
+                    transform=" translate(-10.5, -13.5)"
+                    d="M 7 7 L 6 7 C 4.8954305003384135 7 4 7.8954305003384135 4 9 L 4 18 C 4 19.104569499661586 4.8954305003384135 20 6 20 L 15 20 C 16.104569499661586 20 17 19.104569499661586 17 18 L 17 17"
+                    stroke-linecap="round" />
+            </g>
+            <g transform="matrix(1 0 0 1 2.75 -3.25)">
+                <path
+                    style="stroke: rgb(0,0,0); stroke-width: 1.5; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"
+                    transform=" translate(-15, -9)"
+                    d="M 20.385 6.585 C 21.20514285349873 5.764857146501272 21.20514285349873 4.4351428534987285 20.385 3.615 C 19.564857146501275 2.794857146501272 18.23514285349873 2.7948571465012715 17.415000000000003 3.6149999999999998 L 9.000000000000004 12 L 9.000000000000004 15 L 12.000000000000004 15 L 20.385000000000005 6.585000000000001 z"
+                    stroke-linecap="round" />
+            </g>
+            <g transform="matrix(1 0 0 1 5.25 -5.75)">
+                <path
+                    style="stroke: rgb(0,0,0); stroke-width: 1.5; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"
+                    transform=" translate(-17.5, -6.5)" d="M 16 5 L 19 8" stroke-linecap="round" />
+            </g>
+        </g>
+    </g>
+</svg>
