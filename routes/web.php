@@ -1,15 +1,12 @@
 <?php
 
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\PatientController;
+use App\Http\Controllers\StaffController;
 use Illuminate\Support\Facades\Route;
-use App\Models\Supplier;
-use App\Models\InventoryItem;
-use App\Models\Patient;
-use App\Models\Staff;
-use App\Models\Medication;
-use App\Models\Appointment;
-use App\Models\Bill;
-use App\Models\Payment;
-use App\Models\Record;
+
+
+use App\Http\Controllers\DefaultController;
 use App\Http\Controllers\PaymentController;
 
 Route::get('/payment', [PaymentController::class, 'create'])->name('payment');
@@ -24,34 +21,31 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
 
-        // Fetch all data
-        $suppliers = Supplier::all();
-        $inventoryItems = InventoryItem::all();
-        $patients = Patient::all();
-        $staffs = Staff::all();
-        $medications = Medication::all();
-        $appointments = Appointment::all();
-        $bills = Bill::all();
-        $payments = Payment::all();
-        $records = Record::all();
+    Route::get('/dashboard', [DefaultController::class, 'dashboard'])->name('dashboard');
+    // Don't spam on DefaultController, make the others in their specific controller;
+    // To go to specific controller, press Ctrl+Click on Targetcontroller [exp: click on line 23 'DefaultController']
 
 
-        // Pass data
-        return view('dashboard', [
-            'suppliers' => $suppliers,
-            'inventoryItems' => $inventoryItems,
-            'patients' => $patients,
-            'staffs' => $staffs,
-            'medications' => $medications,
-            'appointments' => $appointments,
-            'bills' => $bills,
-            'payments' => $payments,
-            'records' => $records,
-        ]);
-    })->name('dashboard');
 
-        //return view('dashboard');
-    //})->name('dashboard');
+    //Patients routes
+    {
+        Route::get('/patient', [PatientController::class, 'index'])->middleware(['auth', 'verified'])->name('patient.index');
+        Route::get('/patient/new', function () {return view('patients.add');})->middleware(['auth', 'verified'])->name('patient.new');
+        Route::post('/patient/new/add', [PatientController::class, 'patientAdd'])->middleware(['auth', 'verified'])->name('patient.add');
+        Route::get('/patient/{id}', [PatientController::class, 'patientDetail'])->middleware(['auth', 'verified'])->name('patient.details');
+        Route::put('/patient/{id}/update', [PatientController::class, 'patientUpdate'])->middleware(['auth', 'verified'])->name('patient.update');
+        Route::delete('/patient/{id}/delete', [PatientController::class, 'patientDelete'])->middleware(['auth', 'verified'])->name('patient.delete');
+    }
+
+    //Staff routes
+
+    {
+        Route::get('/staff', [StaffController::class, 'index'])->middleware(['auth', 'verified'])->name('staff.index');
+        Route::get('/staff/new', function () {return view('staffs.add');})->middleware(['auth', 'verified'])->name('staff.new');
+        Route::post('/staff/new/add', [StaffController::class, 'staffAdd'])->middleware(['auth', 'verified'])->name('staff.add');
+        Route::get('/staff/{id}', [StaffController::class, 'staffDetail'])->middleware(['auth', 'verified'])->name('staff.details');
+        Route::put('/staff/{id}/update', [StaffController::class, 'staffUpdate'])->middleware(['auth', 'verified'])->name('staff.update');
+        Route::delete('/staff/{id}/delete', [StaffController::class, 'staffDelete'])->middleware(['auth', 'verified'])->name('staff.delete');
+    }
 });

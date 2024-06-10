@@ -1,0 +1,60 @@
+p {
+    max-width: 60ch;
+}
+
+.btn,
+[type="submit"] {
+    background: none;
+    padding: 5px 20px;
+    color: #6875f5;
+    border: #6875f5 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 200ms;
+
+    width: fit-content;
+}
+
+.btn:hover,
+[type="submit"]:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.dlt {
+    border: #f00 solid 1px;
+    color: #f00;
+
+    &:hover {
+        background-color: #f00;
+        color: white;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+.input,
+textarea,
+select {
+    background: white;
+    border: 1px #0005 solid;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+textarea{
+    padding: 10px !important;
+}
+
+
+
+option {
+    font-size: 1.1rem;
+}
+
+.form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
