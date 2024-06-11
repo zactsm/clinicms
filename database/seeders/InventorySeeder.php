@@ -15,7 +15,7 @@ class InventorySeeder extends Seeder
      */
     public function run(): void
     {
-        $inventories = [
+        $items = [
             [
                 'itemID' => '20001',
                 'suppID' => '10001',
@@ -40,8 +40,8 @@ class InventorySeeder extends Seeder
 
         ];
 
-        foreach ($inventories as $inventory) {
-            DB::table('inventory')->insert($inventory);
+        foreach ($items as $item) {
+            DB::table('item')->insert($item);
         }
     }
 }
