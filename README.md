@@ -31,6 +31,8 @@ Pictures here
 1. It is difficult to handle many files
 2. File or variable names sometimes mismatch
 
+--- End of Clinic Management System Project Report ---
+
 > [!IMPORTANT]
 > For group members!
 
