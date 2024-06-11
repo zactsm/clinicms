@@ -27,7 +27,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ## Project system captured screen and explanation
 Pictures here
 
-## What is the challenge/difficulties to develop the application
+## Challenge/difficulties to develop the application
 1. It is difficult to handle many files
 2. File or variable names sometimes mismatch
 
