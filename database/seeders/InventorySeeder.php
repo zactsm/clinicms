@@ -11,7 +11,7 @@ use Illuminate\Support\Str;
 class InventorySeeder extends Seeder
 {
     /**
-     * Run the database seeds test.
+     * Run the database seeds testddd.
      */
     public function run(): void
     {
