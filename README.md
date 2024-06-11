@@ -1,5 +1,14 @@
 # Clinic Management System Project
 
+## Group members
+| Name  | Matric No. |
+| ------------- | ------------- |
+| MUAZZAM HAZMI BIN SUKHAIMI  | 2219361  |
+| MIRZA DARWISY BIN MAHAZIR  | 2218867  |
+| member 3  | XXXXXXX  |
+| member 4  | XXXXXXX  |
+| member 5  | XXXXXXX  |
+
 ## ER Diagram
 ![Entity Relationship Diagram of Clinic Management System](/assets/erdfinal.png)
 
