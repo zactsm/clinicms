@@ -46,6 +46,7 @@ Pictures here
    php artisan migrate
    ```
    > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
+
    or
    ```
    php artisan migrate:fresh
