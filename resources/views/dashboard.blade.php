@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <x-welcome />
                 <x-supplier :suppliers="$suppliers" />
-                <x-inventory :inventoryItems="$inventoryItems" />
+                <x-item :items="$items" />
                 <x-patient :patients="$patients" />
                 <x-staff :staffs="$staffs" />
                 <x-medication :medications="$medications" />

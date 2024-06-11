@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Supplier;
-use App\Models\InventoryItem;
+use App\Models\Item;
 use App\Models\Patient;
 use App\Models\Staff;
 use App\Models\Medication;
@@ -20,7 +20,7 @@ class DefaultController extends Controller
     {
         // Fetch all data
         $suppliers = Supplier::all();
-        $inventoryItems = InventoryItem::all();
+        $items = Item::all();
         $patients = Patient::all();
         $staffs = Staff::all();
         $medications = Medication::all();
@@ -31,7 +31,7 @@ class DefaultController extends Controller
 
         return view("dashboard", compact([
             'suppliers',
-            'inventoryItems',
+            'items',
             'patients',
             'staffs',
             'medications',

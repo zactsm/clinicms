@@ -3,6 +3,7 @@
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\StaffController;
+use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -47,5 +48,16 @@ Route::middleware([
         Route::get('/staff/{id}', [StaffController::class, 'staffDetail'])->middleware(['auth', 'verified'])->name('staff.details');
         Route::put('/staff/{id}/update', [StaffController::class, 'staffUpdate'])->middleware(['auth', 'verified'])->name('staff.update');
         Route::delete('/staff/{id}/delete', [StaffController::class, 'staffDelete'])->middleware(['auth', 'verified'])->name('staff.delete');
+    }
+
+    //item routes
+
+    {
+        Route::get('/item', [ItemController::class, 'index'])->middleware(['auth', 'verified'])->name('item.index');
+        Route::get('/item/new', function () {return view('items.add');})->middleware(['auth', 'verified'])->name('item.new');
+        Route::post('/item/new/add', [ItemController::class, 'itemAdd'])->middleware(['auth', 'verified'])->name('item.add');
+        Route::get('/item/{id}', [ItemController::class, 'itemDetail'])->middleware(['auth', 'verified'])->name('item.details');
+        Route::put('/item/{id}/update', [ItemController::class, 'itemUpdate'])->middleware(['auth', 'verified'])->name('item.update');
+        Route::delete('/item/{id}/delete', [ItemController::class, 'itemDelete'])->middleware(['auth', 'verified'])->name('item.delete');
     }
 });
