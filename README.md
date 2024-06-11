@@ -36,18 +36,6 @@ Pictures here
     ```
     php artisan key:generate
     ```
-   
-
-### **Configure XAMPP:**
-1. Make sure the Apache DocumentRoot is as following:<br />
-   ```
-   ...
-   DocumentRoot "C:/xampp/htdocs/clinicms/public"
-   <Directory "C:/xampp/htdocs/clinicms/public">
-   ...
-   ```
-2. Now the _localhost_ URL will bring you to the homepage
-
 
 ### **Create database and insert the data:**
 1. Open **clinicms** in File Explorer
@@ -67,9 +55,23 @@ Pictures here
    php artisan db:seed
    ```
 
-
-### **Run this last (needs to run every single time):**
-1. Run npm to execute script files
+### **Install Vite Plugin**
+1. Run (once)
+   ```
+   npm install
+   npm install vite laravel-vite-plugin
+   ```
+2. Run (everytime)
    ```
    npm run dev
    ```
+
+### **Configure XAMPP:**
+1. Make sure the Apache DocumentRoot is as following:<br />
+   ```
+   ...
+   DocumentRoot "C:/xampp/htdocs/clinicms/public"
+   <Directory "C:/xampp/htdocs/clinicms/public">
+   ...
+   ```
+2. Now the _localhost_ URL will bring you to the homepage
