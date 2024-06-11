@@ -41,21 +41,21 @@ Pictures here
 1. Open **clinicms** in File Explorer
 2. Click the address bar once, type `CMD` and click Enter
 3. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
-4. Run migrate command or fresh migrate command to clear the data inside the database
+4. Run migrate command or fresh migrate command
    ```
    php artisan migrate
    ```
+   > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
    or
    ```
    php artisan migrate:fresh
    ```
-    > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
 6. Seed the database
    ```
    php artisan db:seed
    ```
 
-### **Install Vite Plugin**
+### **Install Vite Plugin:**
 1. Run (once)
    ```
    npm install
