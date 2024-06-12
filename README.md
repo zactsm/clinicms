@@ -52,10 +52,10 @@ The goal of this project is to create a solid clinic database system designed wi
 Pictures here
 
 ## Challenge/difficulties to develop the application
-1. It is difficult to handle many files
-   It's tough to keep track of where everything is, what each file does, and how they all connect. This complexity makes it hard for me to keep the code clean and organized, which in turn makes finding my way around and debugging a pain.
-2. File or variable names sometimes mismatch
-   When names aren't consistent, it causes confusing and hard-to-find errors. This inconsistency makes the code harder to read and maintain, and fixing these issues without proper tools leave my code in a mess.
+1. It is difficult to handle many files</br>
+   It is tough to keep track of where everything is, what each file does, and how they all connect. This complexity makes it hard for me to keep the code clean and organized, which in turn makes finding my way around and debugging a pain.
+2. File or variable names sometimes mismatch</br>
+   When names are not consistent, it causes confusing and hard-to-find errors. This inconsistency makes the code harder to read and maintain, and fixing these issues without proper tools leave my code in a mess.
 
 ---------- **End of Clinic Management System Project Report** ----------
 
