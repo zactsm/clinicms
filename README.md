@@ -73,8 +73,15 @@ The diagram above shows the registration page for new authorized users. Users wi
 
 The diagram above shows the login page for returning authorized users. Users will be prompted to enter their registered email and password. Successful authentication will redirect users to the dashboard page.
 
+### Dashboard
+![Dashboardd Page](/assets/screenshots/dashboard.png)
+
+The diagram above shows the dashboard page of Clinic Management System. In this page, it displays the table and the data for Suppliers, Medication, Appointment, Bills, and Medical Records.
+
 ### Patient
 ![Patient Information Page](/assets/screenshots/patient.png)
+
+The diagram above shows the patient information. Users may click the + icon to add a new patient or edit icon in the table to edit or remove the patient data.
 
 ![Add Patient Page](/assets/screenshots/add-patient.png)
 
@@ -83,6 +90,8 @@ The diagram above shows the login page for returning authorized users. Users wil
 ### Staff
 ![Staff Information Page](/assets/screenshots/staff.png)
 
+The diagram above shows the staff information. Users may click the + icon to add a new staff or edit icon in the table to edit or remove the staff data.
+
 ![Add Staff Page](/assets/screenshots/add-staff.png)
 
 ![Edit or Remove Staff Page](/assets/screenshots/edit-remove-staff.png)
@@ -90,14 +99,22 @@ The diagram above shows the login page for returning authorized users. Users wil
 ### Item
 ![Item Information Page](/assets/screenshots/item.png)
 
+The diagram above shows the item information. Users may click the + icon to add a new item or edit icon in the table to edit or remove the item data.
+
 ![Add Item Page](/assets/screenshots/add-item.png)
 
 ![Edit or Remove Item](/assets/screenshots/edit-remove-item.png)
 
+### Payment
+
 ![Payment Information Page](/assets/screenshots/payment.png)
+
+The diagram above shows the payment page which it displays the payment information.
 
 ### Medical Records
 ![Medical Record Information Page](/assets/screenshots/record.png)
+
+The diagram above shows the medical records information. Users may click the + icon to add a new record or edit icon in the table to edit or remove the medical record data.
 
 ![Add Medical Record Page](/assets/screenshots/add-record.png)
 
@@ -105,6 +122,8 @@ The diagram above shows the login page for returning authorized users. Users wil
 
 ### Create Appointment
 ![Add Appointment Page](/assets/screenshots/add-appointment.png)
+
+The diagram above shows the create appointment page. Users will be prompted to enter the date and time requested for appointment, and some notes for the staff.
 
 ## Challenge/difficulties to develop the application
 1. It is difficult to handle many files</br>
