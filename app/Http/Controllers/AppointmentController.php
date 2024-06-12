@@ -10,12 +10,12 @@ class AppointmentController extends Controller
     public function index()
     {
         $appointments = Appointment::all();
-        return view('appointments.index', compact('appointments'));
+        return view('list-appointments', compact('appointments'));
     }
 
     public function create()
     {
-        return view('appointments.create');
+        return view('create-appointment');
     }
 
     public function store(Request $request)
@@ -29,14 +29,14 @@ class AppointmentController extends Controller
 
         Appointment::create($request->all());
 
-        return redirect()->route('appointments.index')
+        return redirect()->route('appointments.list')
                          ->with('success', 'Appointment created successfully.');
     }
 
     public function show($id)
     {
         $appointment = Appointment::findOrFail($id);
-        return view('appointments.show', compact('appointment'));
+        return view('view-appointments', compact('appointment'));
     }
 
     public function update(Request $request, $id)
@@ -51,7 +51,7 @@ class AppointmentController extends Controller
         $appointment = Appointment::findOrFail($id);
         $appointment->update($request->all());
 
-        return redirect()->route('appointments.index')
+        return redirect()->route('appointments.list')
                          ->with('success', 'Appointment updated successfully.');
     }
 
@@ -60,7 +60,7 @@ class AppointmentController extends Controller
         $appointment = Appointment::findOrFail($id);
         $appointment->delete();
 
-        return redirect()->route('appointments.index')
+        return redirect()->route('appointments.list')
                          ->with('success', 'Appointment deleted successfully.');
     }
 }
