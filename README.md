@@ -58,7 +58,7 @@ Pictures here
    When names are not consistent, it causes confusing and hard-to-find errors. This inconsistency makes the code harder to read and maintain, and fixing these issues without proper tools leave my code in a mess.
 
 <p align="center">
--------------------- **End of Clinic Management System Project Report** --------------------
+-------------------- End of Clinic Management System Project Report --------------------
 </p>
 
 > [!IMPORTANT]
