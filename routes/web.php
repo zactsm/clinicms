@@ -6,6 +6,7 @@ use App\Http\Controllers\StaffController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\MedicalRecordController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -80,6 +81,12 @@ Route::middleware([
     //payment routes
     {
         //Route::get('/payment/info', [PaymentController::class, 'index'])->middleware(['auth', 'verified'])->name('paymentInfo.index');
+    }
+
+    //medical record routes
+    {
+        Route::get('/medical_records/create', [MedicalRecordController::class, 'create'])->name('medical_records.create');
+        Route::post('/medical_records', [MedicalRecordController::class, 'store'])->name('medical_records.store');
     }
 
 });

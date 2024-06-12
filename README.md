@@ -5,7 +5,7 @@
 | ------------- | ------------- |
 | MUAZZAM HAZMI BIN SUKHAIMI  | 2219361  |
 | MIRZA DARWISY BIN MAHAZIR  | 2218867  |
-| member 3  | XXXXXXX  |
+| NOR AISYAH BINTI AMRAN | 2129950  |
 | member 4  | XXXXXXX  |
 | member 5  | XXXXXXX  |
 
@@ -17,7 +17,30 @@ The goal of this project is to create a solid clinic database system designed wi
 
 
 ## Features and Functionalities
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+1. Patient Management:
+- Register, update, and track patient details.
+- Maintain a detailed patient history.
+
+2. Appointment Scheduling:
+- Schedule, manage, and update appointments.
+- Calendar view for easy tracking.
+  
+3. Medical Records:
+- Store and access detailed patient medical histories.
+- Secure management of medical records.
+
+4. Staff Management:
+- Handle staff roles, schedules, and duties.
+- Ensure proper staff allocation.
+
+5. Billing:
+- Generate and manage patient bills.
+- Track payments and provide detailed billing statements.
+
+6. Inventory Management:
+- Track inventory of medical supplies.
+- Manage orders, usage, and restocking of supplies.
+- Ensure availability of necessary medical equipment.
 
 ## ER Diagram
 ![Entity Relationship Diagram of Clinic Management System](/assets/erdfinal.png)
