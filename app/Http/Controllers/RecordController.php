@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\Record;
 use App\Models\Patient;
 use App\Models\Staff;
-use App\Models\Medication;
+//use App\Models\Medication;
 
 class RecordController extends Controller
 {
     public function index()
     {
-        $records = Record::with(['patient', 'staff', 'medication'])->get();
+        $records = Record::with(['patient', 'staff'])->get();
         return view('records.index', compact('records'));
     }
 
@@ -20,8 +20,8 @@ class RecordController extends Controller
     {
         $patients = Patient::all();
         $staffs = Staff::all();
-        $medications = Medication::all();
-        return view('records.create', compact('patients', 'staffs', 'medications'));
+       // $medications = Medication::all();
+        return view('records.create', compact('patients', 'staffs'));
     }
 
     public function store(Request $request)
@@ -29,7 +29,7 @@ class RecordController extends Controller
         $request->validate([
             'patientID' => 'required|exists:patients,id',
             'staffID' => 'required|exists:staff,id',
-            'medID' => 'required|exists:medications,id',
+          //  'medID' => 'required|exists:medications,id',
             'recDiagnosis' => 'required|string',
             'recDate' => 'required|date'
         ]);

@@ -32,16 +32,7 @@
                 @endisset
             </select>
         </div>
-        <div class="form-group">
-            <label for="medID">Medication</label>
-            <select name="medID" class="form-control">
-                @isset($medications)
-                    @for ($i = 0; $i < count($medications); $i++)
-                        <option value="{{ $medications[$i]->id }}">{{ $medications[$i]->name }}</option>
-                    @endfor
-                @endisset
-            </select>
-        </div>
+        
         <div class="form-group">
             <label for="recDiagnosis">Diagnosis</label>
             <input type="text" name="recDiagnosis" class="form-control">

@@ -14,7 +14,7 @@ class Record extends Model
     protected $fillable = [
         'patientID',
         'staffID',
-        'medID',
+        //'medID',
         'recDiagnosis',
         'recDate',
     ];
@@ -29,8 +29,8 @@ class Record extends Model
         return $this->belongsTo(Staff::class, 'staffID');
     }
 
-    public function medication()
-    {
-        return $this->belongsTo(Medication::class, 'medID');
-    }
+   // public function medication()
+    //{
+      //  return $this->belongsTo(Medication::class, 'medID');
+    //}
 }
