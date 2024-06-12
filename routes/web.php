@@ -66,6 +66,16 @@ Route::middleware([
         Route::delete('/item/{id}/delete', [ItemController::class, 'itemDelete'])->middleware(['auth', 'verified'])->name('item.delete');
     }
 
+    // Appointment routes
+    {
+        Route::get('/appointments', [AppointmentController::class, 'index'])->middleware(['auth', 'verified'])->name('appointments.index');
+        Route::get('/appointments/new', [AppointmentController::class, 'create'])->middleware(['auth', 'verified'])->name('appointments.new');
+        Route::post('/appointments/new/add', [AppointmentController::class, 'store'])->middleware(['auth', 'verified'])->name('appointments.add');
+        Route::get('/appointments/{id}', [AppointmentController::class, 'show'])->middleware(['auth', 'verified'])->name('appointments.details');
+        Route::put('/appointments/{id}/update', [AppointmentController::class, 'update'])->middleware(['auth', 'verified'])->name('appointments.update');
+        Route::delete('/appointments/{id}/delete', [AppointmentController::class, 'destroy'])->middleware(['auth', 'verified'])->name('appointments.delete');
+    }
+
     //payment routes
     {
         //Route::get('/payment/info', [PaymentController::class, 'index'])->middleware(['auth', 'verified'])->name('paymentInfo.index');
