@@ -26,17 +26,15 @@
 
                 <!-- Input field for Bill ID -->
                 <div class="form-group">
-                    <!--<label for="bill_id">Bill ID:</label>-->
                     <input type="text" id="bill_id" name="bill_id" placeholder="Bill ID" required>
                 </div>
 
                 <!-- Input field for Payment Amount -->
                 <div class="form-group">
-                    <!--<label for="payment_amount">Payment Amount:</label>-->
                     <input type="text" id="payment_amount" name="amount" placeholder="Payment Amount (RM)" required>
                 </div>
 
-                <!-- Hidden fields for PayPal settings -->
+                <!-- Hidden fields for PayPal -->
                 <input type="hidden" name="item_name" value="Payment for Bill">
                 <input type="hidden" name="currency_code" value="MYR">
                 <input type="hidden" name="return" value="{{ url('/') }}">

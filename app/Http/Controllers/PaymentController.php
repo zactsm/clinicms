@@ -83,7 +83,7 @@ class PaymentController extends Controller{
     $payment->paymentDate = now(); // or any other date you want
     $payment->save();
 
-    // Redirect or return a response as needed
+    // Redirect
     return view('welcome')->with('success', 'Payment successfully made.');
 
 }

@@ -30,7 +30,7 @@
                                 <th style="width: 5%;">Bill ID</th>
                                 <th>Amount</th>
                                 <th style="width: 10%">Date</th>
-                                <!-- Add more columns if needed -->
+
                             </tr>
                         </thead>
                         <!-- Table body -->
