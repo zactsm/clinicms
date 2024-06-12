@@ -12,6 +12,8 @@ use App\Http\Controllers\PaymentController;
 
 Route::get('/payment', [PaymentController::class, 'create'])->name('payment');
 Route::post('/store-payment', [PaymentController::class, 'store'])->name('store.payment');
+Route::view('/payment-cancel', 'payment-cancel')->name('payment-cancel');
+
 
 Route::get('/', function () {
     return view('welcome');

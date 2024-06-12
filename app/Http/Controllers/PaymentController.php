@@ -34,7 +34,7 @@ class PaymentController extends Controller{
         'amount' => $validatedData['amount'],
         'currency_code' => 'MYR',
         'return' => url('/'), // or any other URL
-        'cancel_return' => url('/payment-cancel'), // or any other URL
+        'cancel_return' => route('payment-cancel'), // or any other URL
     ]);
 
     // Redirect the user to PayPal

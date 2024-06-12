@@ -88,3 +88,21 @@ body {
     margin-bottom: 20px;
     margin-left: 73px;
 }
+
+.cancel-container {
+    position: relative;
+    background: #FFFFFF;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+}
+
+.box-title {
+    font-weight: bolder;
+}
+
+.return-button {
+    padding-top: 15px;
+}
