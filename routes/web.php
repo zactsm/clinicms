@@ -6,7 +6,7 @@ use App\Http\Controllers\StaffController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\PaymentController;
-use App\Http\Controllers\MedicalRecordController;
+use App\Http\Controllers\RecordController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -85,9 +85,10 @@ Route::middleware([
     }
 
     //medical record routes
-    {
-        Route::get('/medical_records/create', [MedicalRecordController::class, 'create'])->name('medical_records.create');
-        Route::post('/medical_records', [MedicalRecordController::class, 'store'])->name('medical_records.store');
-    }
 
+    {
+        Route::get('/records/create', [RecordController::class, 'create'])->name('records.create');
+        Route::post('/records', [RecordController::class, 'store'])->name('records.store');
+        Route::get('/records', [RecordController::class, 'index'])->name('records.index');
+    }
 });
