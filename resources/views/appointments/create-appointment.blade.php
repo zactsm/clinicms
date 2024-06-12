@@ -22,21 +22,15 @@
             <form action="{{ route('appointments.store') }}" method="post">
                 @csrf
                 <div class="form-group">
-                    <input type="text" name="patient_name" placeholder="Patient Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="doctor_name" placeholder="Doctor Name" required>
-                </div>
-                <div class="form-group">
                     <input type="date" name="appointment_date" placeholder="Appointment Date" required>
                 </div>
                 <div class="form-group">
                     <input type="time" name="appointment_time" placeholder="Appointment Time" required>
                 </div>
                 <div class="form-group">
-                    <textarea name="notes" placeholder="Notes"></textarea>
+                    <textarea cols="30" rows="4" name="notes" placeholder="Notes"></textarea>
                 </div>
-                <button type="submit" class="create-button">Create Appointment</button>
+                <strong><button type="submit" class="create-button">CREATE APPOINTMENT</button></strong>
             </form>
         </div>
     </div>

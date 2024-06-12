@@ -27,8 +27,8 @@
                     <x-nav-link href="{{ route('paymentInfo.index') }}" :active="request()->routeIs('payment.index')">
                         Payment
                     </x-nav-link>
-                    <x-nav-link href="{{ route('appointments.new') }}" :active="request()->routeIs('appointments.new')">
-                        Create Appointment
+                    <x-nav-link href="{{ route('appointments.list') }}" :active="request()->routeIs('appointments.list')">
+                        Appointments
                     </x-nav-link>
                     <x-nav-link href="{{ route('records.index') }}" :active="request()->routeIs('records.index')">
                         Medical Records
