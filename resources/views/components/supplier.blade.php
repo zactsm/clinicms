@@ -1,7 +1,7 @@
 <!-- resources/views/components/inventory.blade.php -->
 <div style="padding-top: 3rem; padding-bottom: 5rem;">
     <div style="text-align: left; padding-bottom: 20px; padding-left: 2.5%;">
-    <h2>Suppliers</h2>
+    <h2 style="font-weight: bold;">Suppliers</h2>
     </div>
     <table style="border-collapse: collapse; width: 95%; margin: 0 auto;">
         <!-- Table headers -->
