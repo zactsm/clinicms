@@ -11,10 +11,14 @@ class Record extends Model
 
     protected $table = 'medical_record';
 
+    protected $primaryKey = 'recID';
+
+    public $timestamps = false;
+
     protected $fillable = [
         'patientID',
         'staffID',
-        //'medID',
+        'medID',
         'recDiagnosis',
         'recDate',
     ];

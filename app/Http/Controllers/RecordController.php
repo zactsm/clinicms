@@ -4,37 +4,66 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Record;
-use App\Models\Patient;
-use App\Models\Staff;
-//use App\Models\Medication;
 
 class RecordController extends Controller
 {
+
     public function index()
     {
-        $records = Record::with(['patient', 'staff'])->get();
+        $records = Record::all();
         return view('records.index', compact('records'));
     }
 
     public function create()
     {
-        $patients = Patient::all();
-        $staffs = Staff::all();
-       // $medications = Medication::all();
-        return view('records.create', compact('patients', 'staffs'));
+        return view('records.create');
     }
 
     public function store(Request $request)
     {
         $request->validate([
-            'patientID' => 'required|exists:patients,id',
-            'staffID' => 'required|exists:staff,id',
-          //  'medID' => 'required|exists:medications,id',
-            'recDiagnosis' => 'required|string',
+            'patientID' => 'required',
+            'staffID' => 'required',
+            'medID' => 'required',
+            'recDiagnosis' => 'required',
             'recDate' => 'required|date'
         ]);
 
         Record::create($request->all());
         return redirect()->route('records.index')->with('success', 'Medical Record created successfully');
     }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'patientID' => 'required',
+            'staffID' => 'required',
+            'medID' => 'required',
+            'recDiagnosis' => 'required',
+            'recDate' => 'required|date'
+        ]);
+
+        $record = Record::findOrFail($id);
+        $record->update($request->all());
+
+        return redirect()->route('records.index')->with('success', 'Medical Record updated successfully');
+    }
+
+    public function detail($id)
+    {
+        $record = Record::where('recID', $id)->firstOrFail();
+        return view('records.details', compact('record'));
+    }
+
+    public function delete($id)
+    {
+        $patient = Record::where('recID', $id)->firstOrFail();
+        $patient->delete();
+
+        $patients = Record::all();
+        return redirect()->route('records.index')->with('success', 'Medical Record deleted successfully');
+
+
+    }
+
 }
