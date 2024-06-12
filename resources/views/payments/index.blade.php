@@ -29,7 +29,7 @@
                                 <th style="width: 5%;">Payment ID</th>
                                 <th style="width: 5%;">Bill ID</th>
                                 <th>Amount</th>
-                                <th>Date</th>
+                                <th style="width: 10%">Date</th>
                                 <!-- Add more columns if needed -->
                             </tr>
                         </thead>
@@ -41,7 +41,7 @@
                                     <td>{{ $payment->paymentID }}</td>
                                     <td>{{ $payment->billID }}</td>
 
-                                    <td>{{ $payment->paymentAmount }}</td>
+                                    <td>RM{{ $payment->paymentAmount }}</td>
                                     <td>{{ $payment->paymentDate }}</td>
                                 </tr>
                             @endforeach
