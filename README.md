@@ -49,7 +49,7 @@ The goal of this project is to create a solid clinic database system designed wi
 ![Sequence Diagram of Clinic Management System](/assets/sequence.png)
 
 ## Project system captured screen and explanation
-Pictures here
+![Homepage](/assets/screenshots/home-page.png)
 
 ## Challenge/difficulties to develop the application
 1. It is difficult to handle many files</br>
