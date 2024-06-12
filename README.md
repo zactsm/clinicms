@@ -51,6 +51,40 @@ The goal of this project is to create a solid clinic database system designed wi
 ## Project system captured screen and explanation
 ![Homepage](/assets/screenshots/home-page.png)
 
+![Make Payment Page](/assets/screenshots/make-payment.png)
+
+![Registration Page](/assets/screenshots/register-page.png)
+
+![Login Page](/assets/screenshots/login-page.png)
+
+![Patient Information Page](/assets/screenshots/patient.png)
+
+![Add Patient Page](/assets/screenshots/add-patient.png)
+
+![Edit or Remove Patient Page](/assets/screenshots/edit-remove-patient.png)
+
+![Staff Information Page](/assets/screenshots/staff.png)
+
+![Add Staff Page](/assets/screenshots/add-staff.png)
+
+![Edit or Remove Staff Page](/assets/screenshots/edit-remove-staff.png)
+
+![Item Information Page](/assets/screenshots/item.png)
+
+![Add Item Page](/assets/screenshots/add-item.png)
+
+![Edit or Remove Item](/assets/screenshots/edit-remove-item.png)
+
+![Payment Information Page](/assets/screenshots/payment.png)
+
+![Medical Record Information Page](/assets/screenshots/record.png)
+
+![Add Medical Record Page](/assets/screenshots/add-record.png)
+
+![Edit or Remove Medical Record Page](/assets/screenshots/edit-remove-record.png)
+
+![Add Appointment Page](/assets/screenshots/add-appointment.png)
+
 ## Challenge/difficulties to develop the application
 1. It is difficult to handle many files</br>
    It is tough to keep track of where everything is, what each file does, and how they all connect. This complexity makes it hard for me to keep the code clean and organized, which in turn makes finding my way around and debugging a pain.
