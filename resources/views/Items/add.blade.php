@@ -26,7 +26,7 @@
 
                     <div>
                         <label for="suppID">
-                            Suuplier ID:
+                            Supplier ID:
                         </label>
                         <input class="w-full" type="text" id="suppID" name="suppID" placeholder="supplierID"
                             required>
