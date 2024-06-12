@@ -58,24 +58,36 @@ The diagram above shows the homepage of our web application project. The main co
 - **Login:** Authorized users can login using this button.
 - **Register:** New authorized users can register for an account.
 
+### Make Payment
 ![Make Payment Page](/assets/screenshots/make-payment.png)
 
+The diagram above shows the make payment form for users to enter their Bill ID and payment amount in RM. The submit button will then redirect the users to PayPal Sandbox to complete the payment. Once the payment is completed, the payment information will be stored in the database.
+
+### Registration
 ![Registration Page](/assets/screenshots/register-page.png)
 
+The diagram above shows the registration page for new authorized users. Users will be prompted to enter their name, email, password, and confirm password.
+
+### Login
 ![Login Page](/assets/screenshots/login-page.png)
 
+The diagram above shows the login page for returning authorized users. Users will be prompted to enter their registered email and password. Successful authentication will redirect users to the dashboard page.
+
+### Patient
 ![Patient Information Page](/assets/screenshots/patient.png)
 
 ![Add Patient Page](/assets/screenshots/add-patient.png)
 
 ![Edit or Remove Patient Page](/assets/screenshots/edit-remove-patient.png)
 
+### Staff
 ![Staff Information Page](/assets/screenshots/staff.png)
 
 ![Add Staff Page](/assets/screenshots/add-staff.png)
 
 ![Edit or Remove Staff Page](/assets/screenshots/edit-remove-staff.png)
 
+### Item
 ![Item Information Page](/assets/screenshots/item.png)
 
 ![Add Item Page](/assets/screenshots/add-item.png)
@@ -84,12 +96,14 @@ The diagram above shows the homepage of our web application project. The main co
 
 ![Payment Information Page](/assets/screenshots/payment.png)
 
+### Medical Records
 ![Medical Record Information Page](/assets/screenshots/record.png)
 
 ![Add Medical Record Page](/assets/screenshots/add-record.png)
 
 ![Edit or Remove Medical Record Page](/assets/screenshots/edit-remove-record.png)
 
+### Create Appointment
 ![Add Appointment Page](/assets/screenshots/add-appointment.png)
 
 ## Challenge/difficulties to develop the application
