@@ -16,10 +16,10 @@
     <div class="appointment-box">
         <div class="form">
             <div class="form-title">
-            <img src="{{ asset('assets/clinic.png') }}" alt="Logo" class="appointment-icon"/>
-            <h1>Create Appointment</h1>
+                <img src="{{ asset('assets/clinic.png') }}" alt="Logo" class="appointment-icon"/>
+                <h1>Create Appointment</h1>
             </div>
-            <form action="{{ route('appointments.add') }}" method="post">
+            <form action="{{ route('appointments.store') }}" method="post">
                 @csrf
                 <div class="form-group">
                     <input type="text" name="patient_name" placeholder="Patient Name" required>
