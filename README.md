@@ -10,10 +10,12 @@
 | member 5  | XXXXXXX  |
 
 ## Introduction
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+No matter the size of the clinic, efficient patient data management is essential to the smooth operation of today's fast-paced healthcare environment. Small clinics are looking to technology solutions to improve their operations as a result of the growing need for more efficient procedures and better patient care. Establishing an extensive clinic database system is one such remedy. In this project, we aim to create a system that will accommadate various functions that will smoothen the process of healthcare facilities.
 
 ## Objective
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The goal of this project is to create a solid clinic database system designed with small clinics in mind. The goal of this system is to maintain inventory, manage staff, schedule appointments, digitize patient data, and consolidate other clinic administration functions. The system aims to enhance the quality of patient care by streamlining workflows, improving data accuracy, and offering a uniform platform for managing essential clinic tasks. The targeted functionalities are listed below:
+1. 
+
 
 ## Features and Functionalities
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
