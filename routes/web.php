@@ -70,12 +70,13 @@ Route::middleware([
 
     // Appointment routes
     {
-        Route::get('appointments/create', [AppointmentController::class, 'create'])->name('appointments.create');
-        Route::post('appointments', [AppointmentController::class, 'store'])->name('appointments.store');
         Route::get('appointments', [AppointmentController::class, 'index'])->name('appointments.list');
-        Route::get('appointments/{id}', [AppointmentController::class, 'show'])->name('appointments.show');
+        Route::get('appointments/create', [AppointmentController::class, 'create'])->name('appointments.new');
+        Route::post('appointments', [AppointmentController::class, 'store'])->name('appointments.store');
+        Route::get('appointments/{id}', [AppointmentController::class, 'show'])->name('appointments.details');
         Route::put('appointments/{id}', [AppointmentController::class, 'update'])->name('appointments.update');
-        Route::delete('appointments/{id}', [AppointmentController::class, 'destroy'])->name('appointments.destroy');
+        Route::delete('appointments/{id}', [AppointmentController::class, 'destroy'])->name('appointments.delete');
+
     }
 
     //payment routes
