@@ -87,9 +87,9 @@ Route::middleware([
         Route::get('/records', [RecordController::class, 'index'])->name('records.index');
         Route::get('/records/create', [RecordController::class, 'create'])->name('records.create');
         Route::post('/records', [RecordController::class, 'store'])->name('records.store');
+        Route::put('/records/{id}', [RecordController::class, 'update'])->name('records.update');
         Route::get('/records/{id}', [RecordController::class, 'detail'])->name('records.details');
         Route::delete('/records/{id}/delete', [RecordController::class, 'delete'])->name('records.delete');
 
-Route::put('/records/{id}', [RecordController::class, 'update'])->name('records.update');
     }
 });

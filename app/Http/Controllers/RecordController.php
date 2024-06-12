@@ -35,6 +35,7 @@ class RecordController extends Controller
 
     public function update(Request $request, $id)
     {
+
         $request->validate([
             'patientID' => 'required',
             'staffID' => 'required',
@@ -45,8 +46,7 @@ class RecordController extends Controller
 
         $record = Record::findOrFail($id);
         $record->update($request->all());
-
-        return redirect()->route('records.index')->with('success', 'Medical Record updated successfully');
+        return redirect()->route('records.index')->with('success', 'Medical Record created successfully');
     }
 
     public function detail($id)
@@ -54,6 +54,8 @@ class RecordController extends Controller
         $record = Record::where('recID', $id)->firstOrFail();
         return view('records.details', compact('record'));
     }
+
+    
 
     public function delete($id)
     {

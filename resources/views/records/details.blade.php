@@ -19,6 +19,7 @@
                         <h2 class="text-xl text-center w-full">Medical Record {{$record->recID}}</h2>
 
                         </div>
+
                     <form style="border: 1px solid #ddd;"
                     class="patient-form w-full lg:w-1/2 flex flex-col p-5 gap-5" method="POST"
                     action="{{ route('records.update', $record->recID)}}">
@@ -29,7 +30,7 @@
                         <label for="patientID">
                             Patient ID:
                         </label>
-                        <input class="w-full" type="text" id="patientID" name="patientID" value="{{ $record->recID }}"
+                        <input class="w-full" type="text" id="patientID" name="patientID" value="{{ $record->patientID }}"
                             required>
                     </div>
 
