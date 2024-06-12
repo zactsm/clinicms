@@ -49,7 +49,10 @@ The goal of this project is to create a solid clinic database system designed wi
 ![Sequence Diagram of Clinic Management System](/assets/sequence.png)
 
 ## Project system captured screen and explanation
+
+### Homepage
 ![Homepage](/assets/screenshots/home-page.png)
+In this page, patients can make payment by clicking 'Make Payment' button at the top while authorized users can register and login to the dashboard.
 
 ![Make Payment Page](/assets/screenshots/make-payment.png)
 
@@ -90,71 +93,3 @@ The goal of this project is to create a solid clinic database system designed wi
    It is tough to keep track of where everything is, what each file does, and how they all connect. This complexity makes it hard for me to keep the code clean and organized, which in turn makes finding my way around and debugging a pain.
 2. File or variable names sometimes mismatch</br>
    When names are not consistent, it causes confusing and hard-to-find errors. This inconsistency makes the code harder to read and maintain, and fixing these issues without proper tools leave my code in a mess.
-
-<p align="center">
--------------------- End of Clinic Management System Project Report --------------------
-</p>
-
-> [!IMPORTANT]
-> For group members!
-
-### **For first time pull:**
-1. Open VS Code
-2. Click 'Source Control' at the left bar
-3. Clone Repository
-4. Then select your _C:\xampp\htdocs_ directory as target folder
-5. Open **clinicms** in File Explorer
-6. Click the address bar once, type `CMD` and click Enter
-7. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
-8. Install composer for `autoload.php`
-   ```
-   composer install
-   ```
-10. Configure `.env` file
-    ```
-    copy .env.example .env
-    ```
-12. Generate new unique key
-    ```
-    php artisan key:generate
-    ```
-
-### **Create database and insert the data:**
-1. Open **clinicms** in File Explorer
-2. Click the address bar once, type `CMD` and click Enter
-3. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
-4. Run migrate command or fresh migrate command
-   ```
-   php artisan migrate
-   ```
-   > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
-
-   or
-   ```
-   php artisan migrate:fresh
-   ```
-6. Seed the database
-   ```
-   php artisan db:seed
-   ```
-
-### **Install Vite Plugin:**
-1. Run (once)
-   ```
-   npm install
-   npm install vite laravel-vite-plugin
-   ```
-2. Run (everytime)
-   ```
-   npm run dev
-   ```
-
-### **Configure XAMPP:**
-1. Make sure the Apache DocumentRoot is as following:<br />
-   ```
-   ...
-   DocumentRoot "C:/xampp/htdocs/clinicms/public"
-   <Directory "C:/xampp/htdocs/clinicms/public">
-   ...
-   ```
-2. Now the _localhost_ URL will bring you to the homepage
