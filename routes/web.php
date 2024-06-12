@@ -4,11 +4,12 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\DefaultController;
-use App\Http\Controllers\PaymentController;
+
 
 Route::get('/payment', [PaymentController::class, 'create'])->name('payment');
 Route::post('/store-payment', [PaymentController::class, 'store'])->name('store.payment');
@@ -64,5 +65,8 @@ Route::middleware([
     }
 
     //payment routes
-    Route::get('/payment', [PaymentController::class, 'index'])->middleware(['auth', 'verified'])->name('payment.index');
+    {
+        Route::get('/payment', [PaymentController::class, 'index'])->middleware(['auth', 'verified'])->name('paymentInfo.index');
+    }
+
 });

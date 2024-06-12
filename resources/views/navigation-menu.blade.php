@@ -24,7 +24,7 @@
                     <x-nav-link href="{{ route('item.index') }}" :active="request()->routeIs('item.index')">
                         Item
                     </x-nav-link>
-                    <x-nav-link href="{{ route('payment.index') }}" :active="request()->routeIs('payment.index')">
+                    <x-nav-link href="{{ route('paymentInfo.index') }}" :active="request()->routeIs('payment.index')">
                         Payment
                     </x-nav-link>
                 </div>
