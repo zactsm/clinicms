@@ -10,12 +10,12 @@ class AppointmentController extends Controller
     public function index()
     {
         $appointments = Appointment::all();
-        return view('list-appointments', compact('appointments'));
+        return view('appointments.list-appointments', compact('appointments'));
     }
 
     public function create()
     {
-        return view('create-appointment');
+        return view('appointments.create-appointment');
     }
 
     public function store(Request $request)
@@ -36,7 +36,7 @@ class AppointmentController extends Controller
     public function show($id)
     {
         $appointment = Appointment::findOrFail($id);
-        return view('view-appointments', compact('appointment'));
+        return view('appointments.view-appointments', compact('appointment'));
     }
 
     public function update(Request $request, $id)
