@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 
