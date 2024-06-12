@@ -49,78 +49,84 @@ The goal of this project is to create a solid clinic database system designed wi
 ![Sequence Diagram of Clinic Management System](/assets/sequence.png)
 
 ## Project system captured screen and explanation
-Pictures here
+
+### Homepage
+![Homepage](/assets/screenshots/home-page.png)
+
+The diagram above shows the homepage of our web application project. The main components include:
+- **Make Payment:** The user interface built for patients to make payment through PayPal Sandbox.
+- **Login:** Authorized users can login using this button.
+- **Register:** New authorized users can register for an account.
+
+### Make Payment
+![Make Payment Page](/assets/screenshots/make-payment.png)
+
+The diagram above shows the make payment form for users to enter their Bill ID and payment amount in RM. The submit button will then redirect the users to PayPal Sandbox to complete the payment. Once the payment is completed, the payment information will be stored in the database.
+
+### Registration
+![Registration Page](/assets/screenshots/register-page.png)
+
+The diagram above shows the registration page for new authorized users. Users will be prompted to enter their name, email, password, and confirm password.
+
+### Login
+![Login Page](/assets/screenshots/login-page.png)
+
+The diagram above shows the login page for returning authorized users. Users will be prompted to enter their registered email and password. Successful authentication will redirect users to the dashboard page.
+
+### Dashboard
+![Dashboardd Page](/assets/screenshots/dashboard.png)
+
+The diagram above shows the dashboard page of Clinic Management System. In this page, it displays the table and the data for Suppliers, Medication, Appointment, Bills, and Medical Records.
+
+### Patient
+![Patient Information Page](/assets/screenshots/patient.png)
+
+The diagram above shows the patient information. Users may click the + icon to add a new patient or edit icon in the table to edit or remove the patient data.
+
+![Add Patient Page](/assets/screenshots/add-patient.png)
+
+![Edit or Remove Patient Page](/assets/screenshots/edit-remove-patient.png)
+
+### Staff
+![Staff Information Page](/assets/screenshots/staff.png)
+
+The diagram above shows the staff information. Users may click the + icon to add a new staff or edit icon in the table to edit or remove the staff data.
+
+![Add Staff Page](/assets/screenshots/add-staff.png)
+
+![Edit or Remove Staff Page](/assets/screenshots/edit-remove-staff.png)
+
+### Item
+![Item Information Page](/assets/screenshots/item.png)
+
+The diagram above shows the item information. Users may click the + icon to add a new item or edit icon in the table to edit or remove the item data.
+
+![Add Item Page](/assets/screenshots/add-item.png)
+
+![Edit or Remove Item](/assets/screenshots/edit-remove-item.png)
+
+### Payment
+
+![Payment Information Page](/assets/screenshots/payment.png)
+
+The diagram above shows the payment page which it displays the payment information.
+
+### Medical Records
+![Medical Record Information Page](/assets/screenshots/record.png)
+
+The diagram above shows the medical records information. Users may click the + icon to add a new record or edit icon in the table to edit or remove the medical record data.
+
+![Add Medical Record Page](/assets/screenshots/add-record.png)
+
+![Edit or Remove Medical Record Page](/assets/screenshots/edit-remove-record.png)
+
+### Create Appointment
+![Add Appointment Page](/assets/screenshots/add-appointment.png)
+
+The diagram above shows the create appointment page. Users will be prompted to enter the date and time requested for appointment, and some notes for the staff.
 
 ## Challenge/difficulties to develop the application
 1. It is difficult to handle many files</br>
    It is tough to keep track of where everything is, what each file does, and how they all connect. This complexity makes it hard for me to keep the code clean and organized, which in turn makes finding my way around and debugging a pain.
 2. File or variable names sometimes mismatch</br>
    When names are not consistent, it causes confusing and hard-to-find errors. This inconsistency makes the code harder to read and maintain, and fixing these issues without proper tools leave my code in a mess.
-
-<p align="center">
--------------------- End of Clinic Management System Project Report --------------------
-</p>
-
-> [!IMPORTANT]
-> For group members!
-
-### **For first time pull:**
-1. Open VS Code
-2. Click 'Source Control' at the left bar
-3. Clone Repository
-4. Then select your _C:\xampp\htdocs_ directory as target folder
-5. Open **clinicms** in File Explorer
-6. Click the address bar once, type `CMD` and click Enter
-7. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
-8. Install composer for `autoload.php`
-   ```
-   composer install
-   ```
-10. Configure `.env` file
-    ```
-    copy .env.example .env
-    ```
-12. Generate new unique key
-    ```
-    php artisan key:generate
-    ```
-
-### **Create database and insert the data:**
-1. Open **clinicms** in File Explorer
-2. Click the address bar once, type `CMD` and click Enter
-3. Make sure the path is _C:\xampp\htdocs\clinicms>_ in the CMD
-4. Run migrate command or fresh migrate command
-   ```
-   php artisan migrate
-   ```
-   > If the database 'clinicms' does not exist on the 'mysql' connection, click Enter to create one
-
-   or
-   ```
-   php artisan migrate:fresh
-   ```
-6. Seed the database
-   ```
-   php artisan db:seed
-   ```
-
-### **Install Vite Plugin:**
-1. Run (once)
-   ```
-   npm install
-   npm install vite laravel-vite-plugin
-   ```
-2. Run (everytime)
-   ```
-   npm run dev
-   ```
-
-### **Configure XAMPP:**
-1. Make sure the Apache DocumentRoot is as following:<br />
-   ```
-   ...
-   DocumentRoot "C:/xampp/htdocs/clinicms/public"
-   <Directory "C:/xampp/htdocs/clinicms/public">
-   ...
-   ```
-2. Now the _localhost_ URL will bring you to the homepage
