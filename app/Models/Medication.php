@@ -12,6 +12,7 @@ class Medication extends Model
     protected $table = 'medication';
 
     protected $fillable = [
+        'medID',
         'medName',
         'medDesc',
         'medDosage',

@@ -87,8 +87,8 @@ Route::middleware([
     //medical record routes
 
     {
-        Route::get('/records/create', [RecordController::class, 'create'])->name('records.create');
-        Route::post('/records', [RecordController::class, 'store'])->name('records.store');
         Route::get('/records', [RecordController::class, 'index'])->name('records.index');
+Route::get('/records/create', [RecordController::class, 'create'])->name('records.create');
+Route::post('/records', [RecordController::class, 'store'])->name('records.store');
     }
 });
