@@ -18,7 +18,7 @@
     <div class="cancel-container">
     <h1 class="box-title">Payment Cancelled</h1>
     <div class="return-button">
-    <button class="pay-button" onclick="window.location='{{ url('/') }}'">Return to Welcome Page</button>
+    <button class="pay-button" onclick="window.location='{{ url('/') }}'">Return to Homepage</button>
     </div>
     </div>
     </div>
