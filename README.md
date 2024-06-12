@@ -52,7 +52,11 @@ The goal of this project is to create a solid clinic database system designed wi
 
 ### Homepage
 ![Homepage](/assets/screenshots/home-page.png)
-In this page, patients can make payment by clicking 'Make Payment' button at the top while authorized users can register and login to the dashboard.
+
+The diagram above shows the homepage of our web application project. The main components include:
+- **Make Payment:** The user interface built for patients to make payment through PayPal Sandbox.
+- **Login:** Authorized users can login using this button.
+- **Register:** New authorized users can register for an account.
 
 ![Make Payment Page](/assets/screenshots/make-payment.png)
 
