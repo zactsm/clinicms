@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                    <a href="{{ url('/') }}"> <!-- Assuming 'welcome' is the name of the route for welcome.blade.php -->
                         <img src="{{ asset('assets/clinic.png') }}" alt="Logo" class="block h-10 w-auto"/>
                     </a>
                 </div>
