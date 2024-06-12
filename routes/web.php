@@ -10,8 +10,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DefaultController;
 
-
-Route::get('/payment', [PaymentController::class, 'create'])->name('payment');
+Route::get('/payment', [PaymentController::class, 'create'])->name('payment.create');
+Route::get('/payment/info', [PaymentController::class, 'index'])->middleware(['auth', 'verified'])->name('paymentInfo.index');
 Route::post('/store-payment', [PaymentController::class, 'store'])->name('store.payment');
 Route::view('/payment-cancel', 'payment-cancel')->name('payment-cancel');
 
@@ -66,7 +66,7 @@ Route::middleware([
 
     //payment routes
     {
-        Route::get('/payment', [PaymentController::class, 'index'])->middleware(['auth', 'verified'])->name('paymentInfo.index');
+        //Route::get('/payment/info', [PaymentController::class, 'index'])->middleware(['auth', 'verified'])->name('paymentInfo.index');
     }
 
 });
