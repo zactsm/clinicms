@@ -58,6 +58,9 @@ Pictures here
    When names are not consistent, it causes confusing and hard-to-find errors. This inconsistency makes the code harder to read and maintain, and fixing these issues without proper tools leave my code in a mess.
 
 -------------------- **End of Clinic Management System Project Report** --------------------
+<p align="center">
+// Your content
+</p>
 
 > [!IMPORTANT]
 > For group members!
