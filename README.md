@@ -57,9 +57,8 @@ Pictures here
 2. File or variable names sometimes mismatch</br>
    When names are not consistent, it causes confusing and hard-to-find errors. This inconsistency makes the code harder to read and maintain, and fixing these issues without proper tools leave my code in a mess.
 
--------------------- **End of Clinic Management System Project Report** --------------------
 <p align="center">
-// Your content
+-------------------- **End of Clinic Management System Project Report** --------------------
 </p>
 
 > [!IMPORTANT]
