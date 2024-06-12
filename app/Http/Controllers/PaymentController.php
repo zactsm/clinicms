@@ -25,12 +25,17 @@ class PaymentController extends Controller{
         'amount' => 'required',
     ]);
 
+    $returnUrl = route('payment.success', [
+        'bill_id' => $validatedData['bill_id'],
+        'amount' => $validatedData['amount'],
+    ]);
+
     // Store the payment data in the database
-    $payment = new Payment();
-    $payment->billID = $validatedData['bill_id'];
-    $payment->paymentAmount = $validatedData['amount'];
-    $payment->paymentDate = now(); // or any other date you want
-    $payment->save();
+    //$payment = new Payment();
+    //$payment->billID = $validatedData['bill_id'];
+    //$payment->paymentAmount = $validatedData['amount'];
+    //$payment->paymentDate = now(); // or any other date you want
+    //$payment->save();
 
     // Construct the PayPal URL
     $paypalUrl = 'https://www.sandbox.paypal.com/cgi-bin/webscr?' . http_build_query([
@@ -39,7 +44,7 @@ class PaymentController extends Controller{
         'item_name' => 'Payment for Bill',
         'amount' => $validatedData['amount'],
         'currency_code' => 'MYR',
-        'return' => url('/'), // or any other URL
+        'return' => $returnUrl, // or any other URL
         'cancel_return' => route('payment-cancel'), // or any other URL
     ]);
 
@@ -64,4 +69,23 @@ class PaymentController extends Controller{
         // Redirect back or to a success page
         return redirect()->back()->with('success', 'Payment successfully made.');
     }
+
+    public function paymentSuccess(Request $request)
+{
+    // Retrieve payment data from query parameters
+    $billId = $request->query('bill_id');
+    $amount = $request->query('amount');
+
+    // Store the payment data in the database
+    $payment = new Payment();
+    $payment->billID = $billId;
+    $payment->paymentAmount = $amount;
+    $payment->paymentDate = now(); // or any other date you want
+    $payment->save();
+
+    // Redirect or return a response as needed
+    return view('welcome')->with('success', 'Payment successfully made.');
+
+}
+
 }

@@ -14,6 +14,8 @@ Route::get('/payment', [PaymentController::class, 'create'])->name('payment.crea
 Route::get('/payment/info', [PaymentController::class, 'index'])->middleware(['auth', 'verified'])->name('paymentInfo.index');
 Route::post('/store-payment', [PaymentController::class, 'store'])->name('store.payment');
 Route::view('/payment-cancel', 'payment-cancel')->name('payment-cancel');
+Route::get('/payment/success', [PaymentController::class, 'paymentSuccess'])->name('payment.success');
+
 
 
 Route::get('/', function () {
