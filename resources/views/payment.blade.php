@@ -16,6 +16,7 @@
     <div class="login-box">
         <div class="form">
             <div class="form-title">
+            <img src="{{ asset('assets/clinic.png') }}" alt="Logo" class="payment-icon"/>
             <h1>Make Payment</h1>
             </div>
             <form action="{{ route('store.payment') }}" method="post">
@@ -41,7 +42,10 @@
                 <input type="hidden" name="return" value="{{ url('/') }}">
                 <input type="hidden" name="cancel_return" value="{{ url('/payment-cancel') }}">
 
-                <button type="submit">Pay with PayPal</button>
+                <button type="submit" class="pay-button">
+                    Pay with PayPal
+                    <img src="{{ asset('assets/paypal-logo.png') }}" alt="PayPal Logo">
+                </button>
             </form>
 
         </div>

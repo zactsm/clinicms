@@ -16,55 +16,75 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+}
 
 .form {
-  position: relative;
-  background: #FFFFFF;
-  max-width: 360px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  border-radius:15px;
+    position: relative;
+    background: #FFFFFF;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
 }
+
 .form input {
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-  border-radius:15px;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 15px;
 }
-.form button {
-  text-transform: uppercase;
-  outline: 0;
-  background: #09409d;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  border-radius:15px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-  background: #2957d6;
-}
+
+
+
 .form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
 }
+
 .form .message a {
-  color: #0070e0;
-  text-decoration: none;
+    color: #0070e0;
+    text-decoration: none;
 }
 
 .form-title {
     padding-bottom: 20px;
+}
+
+.pay-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #0070ba;
+    border: 2px solid #0070ba;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add border-color transition */
+}
+
+.pay-button img {
+    margin-left: 10px;
+    height: 20px;
+}
+
+.pay-button:hover {
+    background-color: #0070ba; /* White background on hover */
+    color: #ffffff; /* Blue text color on hover */
+    border-color: #0070ba; /* Blue border on hover */
+}
+
+.payment-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 73px;
 }
