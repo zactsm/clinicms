@@ -62,4 +62,7 @@ Route::middleware([
         Route::put('/item/{id}/update', [ItemController::class, 'itemUpdate'])->middleware(['auth', 'verified'])->name('item.update');
         Route::delete('/item/{id}/delete', [ItemController::class, 'itemDelete'])->middleware(['auth', 'verified'])->name('item.delete');
     }
+
+    //payment routes
+    Route::get('/payment', [PaymentController::class, 'index'])->middleware(['auth', 'verified'])->name('payment.index');
 });

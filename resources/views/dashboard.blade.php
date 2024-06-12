@@ -16,7 +16,6 @@
                 <x-medication :medications="$medications" />
                 <x-appointment :appointments="$appointments" />
                 <x-bill :bills="$bills" />
-                <x-payment :payments="$payments" />
                 <x-record :records="$records" />
 
             </div>

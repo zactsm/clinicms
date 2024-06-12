@@ -11,6 +11,12 @@ class PaymentController extends Controller{
         return view('payment');
     }
 
+    public function index()
+    {
+        $payments = Payment::all();
+        return view("payments.index", compact("payments"));
+    }
+
     public function store(Request $request)
     {
     // Validate the request data
