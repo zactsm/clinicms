@@ -130,3 +130,5 @@ The diagram above shows the create appointment page. Users will be prompted to e
    It is tough to keep track of where everything is, what each file does, and how they all connect. This complexity makes it hard for me to keep the code clean and organized, which in turn makes finding my way around and debugging a pain.
 2. File or variable names sometimes mismatch</br>
    When names are not consistent, it causes confusing and hard-to-find errors. This inconsistency makes the code harder to read and maintain, and fixing these issues without proper tools leave my code in a mess.
+3. Bugs and errors<br/>
+   Unforeseen bugs that hinders the progress and functionalities of one of the components of the system, which is detrimental to the overall system.
