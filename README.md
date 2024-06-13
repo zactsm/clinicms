@@ -6,14 +6,14 @@
 | MUAZZAM HAZMI BIN SUKHAIMI  | 2219361  |
 | MIRZA DARWISY BIN MAHAZIR  | 2218867  |
 | NOR AISYAH BINTI AMRAN | 2129950  |
-| member 4  | XXXXXXX  |
-| member 5  | XXXXXXX  |
+| HASROTUL NADIA BINTI ABD HADI | 2125946  |
+| HANNAH SABRINA BINTI SAIFUL BAHRI  | 2116074  |
 
 ## Introduction
 No matter the size of the clinic, efficient patient data management is essential to the smooth operation of today's fast-paced healthcare environment. Small clinics are looking to technology solutions to improve their operations as a result of the growing need for more efficient procedures and better patient care. Establishing an extensive clinic database system is one such remedy. In this project, we aim to create a system that will accommadate various functions that will smoothen the process of healthcare facilities.
 
 ## Objective
-The goal of this project is to create a solid clinic database system designed with small clinics in mind. The goal of this system is to maintain inventory, manage staff, schedule appointments, digitize patient data, and consolidate other clinic administration functions. The system aims to enhance the quality of patient care by streamlining workflows, improving data accuracy, and offering a uniform platform for managing essential clinic tasks. Some of the targeted functionalities are patient records, staff information, appointment management, and supplier management.
+The goal of this project is to create a solid clinic database system designed with small clinics in mind. The goal of this system is to maintain inventory, manage staff, schedule appointments, digitize patient data, and consolidate other clinic administration functions. The system aims to enhance the quality of patient care by streamlining workflows, improving data accuracy, and offering a uniform platform for managing essential clinic tasks. Aesthetics come second as we aim for a sleek design focused on accessibility and usability, restraining on overloading information as the system will only be used by authorised staffs. Some of the targeted functionalities are patient records, staff information, appointment management, and supplier management.
 
 
 ## Features and Functionalities
@@ -130,3 +130,5 @@ The diagram above shows the create appointment page. Users will be prompted to e
    It is tough to keep track of where everything is, what each file does, and how they all connect. This complexity makes it hard for me to keep the code clean and organized, which in turn makes finding my way around and debugging a pain.
 2. File or variable names sometimes mismatch</br>
    When names are not consistent, it causes confusing and hard-to-find errors. This inconsistency makes the code harder to read and maintain, and fixing these issues without proper tools leave my code in a mess.
+3. Bugs and errors<br/>
+   Unforeseen bugs that hinders the progress and functionalities of one of the components of the system, which is detrimental to the overall system.
