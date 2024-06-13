@@ -106,3 +106,10 @@ body {
 .return-button {
     padding-top: 15px;
 }
+
+.appointment-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 110px;
+}
