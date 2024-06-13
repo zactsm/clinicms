@@ -74,7 +74,7 @@ The diagram above shows the registration page for new authorized users. Users wi
 The diagram above shows the login page for returning authorized users. Users will be prompted to enter their registered email and password. Successful authentication will redirect users to the dashboard page.
 
 ### Dashboard
-![Dashboardd Page](/assets/screenshots/dashboard.png)
+![Dashboard Page](/assets/screenshots/dashboard.png)
 
 The diagram above shows the dashboard page of Clinic Management System. In this page, it displays the table and the data for Suppliers, Medication, Appointment, Bills, and Medical Records.
 
